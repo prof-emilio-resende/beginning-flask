@@ -19,7 +19,7 @@ def professores():
 def initialize():
     database['ALUNO'] = database_alunos
     database['PROFESSOR'] = database_professores
-    app.register_blueprint(alunos_app)
+    app.register_blueprint(alunos_app, url_prefix='/alunos')
 
     app.run()
 
